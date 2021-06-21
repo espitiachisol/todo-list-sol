@@ -1,0 +1,15 @@
+.jumbotron {
+  padding: 0rem;
+}
+.welcome {
+  padding: 12rem;
+  background-color: rgb(206, 230, 230);
+}
+.start-btn {
+  margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .welcome {
+    padding: 8rem 2rem;
+  }
+}

@@ -1,0 +1,22 @@
+.each-todo-main {
+  padding: 1rem 25rem;
+}
+.input-group-text.form-control {
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.each-todo-main > .input-group.mb-3 > .btn.btn-secondary {
+  background-color: rgb(223, 127, 110);
+  border: rgb(223, 127, 110);
+}
+@media (max-width: 1200px) {
+  .each-todo-main {
+    padding: 1rem 15rem;
+  }
+}
+@media (max-width: 800px) {
+  .each-todo-main {
+    padding: 1rem 2rem;
+  }
+}

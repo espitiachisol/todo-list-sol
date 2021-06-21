@@ -1,0 +1,26 @@
+.add-form {
+  padding: 1rem 16rem;
+}
+.btn.btn-secondary {
+  background-color: rgb(171, 206, 206);
+  border: 1px solid rgb(125, 153, 153);
+}
+.btn.btn-secondary:hover {
+  filter: brightness(105%);
+}
+input.form-control {
+  border: 1px solid rgb(125, 153, 153);
+}
+.jumbotron > .btn.btn-warning.btn-lg {
+  margin-top: 3rem;
+}
+@media (max-width: 1200px) {
+  .add-form {
+    padding: 1rem 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .add-form {
+    padding: 1rem 2rem;
+  }
+}
