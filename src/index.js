@@ -3,25 +3,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 import TodoCard from "./components/todo-page/todo.page.js";
 import { HomePage } from "./components/home-page/home.page.js";
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { home: true };
-    this.changepage = this.changepage.bind(this);
-  }
-  changepage(e) {
-    e.preventDefault();
-    this.setState({ home: !this.state.home });
-  }
-  render() {
-    if (this.state.home) {
-      return <HomePage toChangepage={this.changepage} />;
-    } else {
-      return <TodoCard toChangepage={this.changepage} />;
-    }
-  }
-}
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// class App extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = { home: true };
+//     this.changepage = this.changepage.bind(this);
+//   }
+//   changepage(e) {
+//     e.preventDefault();
+//     this.setState({ home: !this.state.home });
+//   }
+//   render() {
+//     if (this.state.home) {
+//       return <HomePage toChangepage={this.changepage} />;
+//     } else {
+//       return <TodoCard toChangepage={this.changepage} />;
+//     }
+//   }
+// }
 // function App() {
 //   return (
 //     <Router>

@@ -3,7 +3,7 @@ import { EachTodo } from "../each-todo/each-todo.component.js";
 import "./todo.page.css";
 import { Header } from "../header/header.component.js";
 import { AddForm } from "../add-todo-form/add-todo-form.component.js";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 class TodoCard extends React.Component {
   constructor(props) {
     super(props);
@@ -44,15 +44,15 @@ class TodoCard extends React.Component {
         <section className="jumbotron text-center justify-content-center todo-page-main">
           <AddForm addSubmit={this.submitAdd} handleChange={this.getOnChange} />
           <EachTodo listToShow={this.state.list} handleDelete={this.delete} />
-          {/* <Link to="/"> */}
-          <button
-            type="button"
-            className="btn btn-warning btn-lg"
-            onClick={this.props.toChangepage}
-          >
-            回首頁
-          </button>
-          {/* </Link> */}
+          <Link to="/">
+            <button
+              type="button"
+              className="btn btn-warning btn-lg"
+              onClick={this.props.toChangepage}
+            >
+              回首頁
+            </button>
+          </Link>
         </section>
       </>
     );
