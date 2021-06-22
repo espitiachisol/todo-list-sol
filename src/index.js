@@ -22,16 +22,16 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //     }
 //   }
 // }
-// function App() {
-//   return (
-//     <Router>
-//       <Switch>
-//         <Route path="/" exact component={HomePage} />
-//         <Route path="/list" component={TodoCard} />
-//       </Switch>
-//     </Router>
-//   );
-// }
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/list" component={TodoCard} />
+      </Switch>
+    </Router>
+  );
+}
 ReactDOM.render(<App />, document.getElementById("root"));
 
 //用純js寫todo-list
